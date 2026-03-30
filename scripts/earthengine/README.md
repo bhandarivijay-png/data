@@ -55,7 +55,7 @@ gcloud auth login
 To copy files on GCS, create a storage bucket with the following command or on
 the cloud console.
 ```
-gcloud storage buckets create gs://<GCS-BUCKET-NAME>/
+gcloud storage buckets create gs://<GCS-BUCKET-NAME>
 ```
 
 ## Extract geoTIFF from EarthEngine (EE)

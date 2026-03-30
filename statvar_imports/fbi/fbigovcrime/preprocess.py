@@ -66,7 +66,7 @@ def copy_and_process_files_from_gcs(gcs_bucket, gcs_prefix, local_base_dir):
             raise RuntimeError('No .xlsx files found')
             return
     except subprocess.CalledProcessError as e:
-        logging.fatal(f"Error listing files from GCS with gcloud storage: {e.stderr}")
+        logging.fatal(f"Error listing files from GCS with gcloud: {e.stderr}")
         raise RuntimeError('Error listing files from GCS')
         return
     except FileNotFoundError:

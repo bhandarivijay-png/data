@@ -5,7 +5,7 @@ SCRIPT_PATH=$(realpath "$(dirname "$0")")
 
 mkdir -p "input_files"
 
-gsutil cp "gs://unresolved_mcf/country/brazil/VISDATA/Benefits_RuralDevelopmentProgram/latest/input_files/*.csv" "$SCRIPT_PATH/input_files"
+gcloud storage cp "gs://unresolved_mcf/country/brazil/VISDATA/Benefits_RuralDevelopmentProgram/latest/input_files/*.csv" "$SCRIPT_PATH/input_files"
 
 PROCESSOR_SCRIPT="$SCRIPT_PATH/../../../tools/statvar_importer/stat_var_processor.py"
 INPUT_BASE_PATH="$SCRIPT_PATH/input_files"
@@ -61,4 +61,3 @@ done
 
 echo "All processing steps completed successfully."
 exit 0
-

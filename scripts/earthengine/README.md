@@ -36,7 +36,7 @@ earthengine authenticate --quiet
 ```
 
 ### Google Cloud SDK
-Install the `gcloud storage` command to copy files from GCS to the local
+Install the `gcloud` command to copy files from GCS to the local
 machine.
 
 1. Install GCS tools using the command:
